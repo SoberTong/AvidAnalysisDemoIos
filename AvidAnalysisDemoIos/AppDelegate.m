@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <HolaStatisticalSDK/HolaStatisticalSDK.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [HolaAnalysis initWithProductId:@"999999" ChannelId:@"999999" AppID:@"id1101603305"];
+    [[STDebugManager shareDebugManager] setIsDebug:YES];
     return YES;
 }
 
